@@ -7,6 +7,7 @@ function createSearchLink(title, author) {
       .replace('{title}', encodeURIComponent(title))
       .replace('{author}', encodeURIComponent(author));
 
+      
     // Create and insert the search link
     const searchLink = document.createElement('a');
     searchLink.href = searchUrl;
@@ -16,10 +17,19 @@ function createSearchLink(title, author) {
     searchLink.style.textDecoration = 'none'; // Remove underline
     searchLink.style.fontSize = '1.5em'; // Increase emoji size
 
-    // Insert the link into the share section
+    // Insert the link into the share section (for existing structure)
     const shareSection = document.querySelector('.BookPageTitleSection__share');
     if (shareSection) {
       shareSection.appendChild(searchLink);
+    }
+
+    // Insert the link into the BookCard (for new structure)
+    const bookCard = document.querySelector('.BookCard');
+    if (bookCard) {
+      const clickCardTarget = document.querySelector('.BookPage__share');
+      if (clickCardTarget) {
+        clickCardTarget.appendChild(searchLink);
+      }
     }
   }
 }
@@ -27,16 +37,30 @@ function createSearchLink(title, author) {
 // Function to observe changes in the DOM
 function observeBookTitle() {
   const observer = new MutationObserver((mutationsList, observer) => {
+    // Check for the existing structure
     const titleElement = document.querySelector('h1[data-testid="bookTitle"]');
-    if (titleElement) {
-      const title = titleElement.innerText;
-      const authorElement = document.querySelector('.ContributorLink__name');
-      const author = authorElement ? authorElement.innerText : '';
+    const authorElement = document.querySelector('.ContributorLink__name');
 
-      if (title && author) {
-        createSearchLink(title, author);
-        observer.disconnect(); // Stop observing once the title is found
-      }
+    // Check for the new structure
+    const bookCardTitleElement = document.querySelector('.BookCard .BookCard__title');
+    const bookCardAuthorElement = document.querySelector('.BookCard .BookCard__author');
+
+    let title = '';
+    let author = '';
+
+    if (titleElement && authorElement) {
+      // Existing structure
+      title = titleElement.innerText;
+      author = authorElement.innerText;
+    } else if (bookCardTitleElement && bookCardAuthorElement) {
+      // New structure
+      title = bookCardTitleElement.innerText;
+      author = bookCardAuthorElement.innerText;
+    }
+      
+    if (title && author) {
+      createSearchLink(title, author);
+      observer.disconnect(); // Stop observing once the title and author are found
     }
   });
 
