@@ -1,0 +1,967 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF4581C32D44AFBE0075C585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4581C22D44AFBE0075C585 /* AppDelegate.swift */; };
+		BF4581C52D44AFBE0075C585 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4581C42D44AFBE0075C585 /* SceneDelegate.swift */; };
+		BF4581C82D44AFBE0075C585 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF4581C72D44AFBE0075C585 /* Base */; };
+		BF4581CB2D44AFBE0075C585 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF4581CA2D44AFBE0075C585 /* Base */; };
+		BF4581D42D44AFBE0075C585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4581D32D44AFBE0075C585 /* AppDelegate.swift */; };
+		BF4581D72D44AFBE0075C585 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF4581D62D44AFBE0075C585 /* Base */; };
+		BF4581DE2D44AFBE0075C585 /* BookLinker Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BF4581DD2D44AFBE0075C585 /* BookLinker Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF4581E82D44AFBE0075C585 /* BookLinker Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BF4581E72D44AFBE0075C585 /* BookLinker Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF4581EE2D44AFBE0075C585 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF4581AA2D44AFBD0075C585 /* Base */; };
+		BF4581EF2D44AFBE0075C585 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF4581AA2D44AFBD0075C585 /* Base */; };
+		BF4581F02D44AFBE0075C585 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4581AB2D44AFBD0075C585 /* Icon.png */; };
+		BF4581F12D44AFBE0075C585 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4581AB2D44AFBD0075C585 /* Icon.png */; };
+		BF4581F22D44AFBE0075C585 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = BF4581AC2D44AFBD0075C585 /* Style.css */; };
+		BF4581F32D44AFBE0075C585 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = BF4581AC2D44AFBD0075C585 /* Style.css */; };
+		BF4581F42D44AFBE0075C585 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = BF4581AD2D44AFBD0075C585 /* Script.js */; };
+		BF4581F52D44AFBE0075C585 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = BF4581AD2D44AFBD0075C585 /* Script.js */; };
+		BF4581F62D44AFBE0075C585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4581AE2D44AFBD0075C585 /* ViewController.swift */; };
+		BF4581F72D44AFBE0075C585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4581AE2D44AFBD0075C585 /* ViewController.swift */; };
+		BF4581F82D44AFBE0075C585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4581AF2D44AFBE0075C585 /* Assets.xcassets */; };
+		BF4581F92D44AFBE0075C585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4581AF2D44AFBE0075C585 /* Assets.xcassets */; };
+		BF4581FA2D44AFBE0075C585 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4581B12D44AFBE0075C585 /* SafariWebExtensionHandler.swift */; };
+		BF4581FB2D44AFBE0075C585 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4581B12D44AFBE0075C585 /* SafariWebExtensionHandler.swift */; };
+		BF4581FC2D44AFBE0075C585 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B32D44AFBE0075C585 /* _locales */; };
+		BF4581FD2D44AFBE0075C585 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B32D44AFBE0075C585 /* _locales */; };
+		BF4581FE2D44AFBE0075C585 /* images in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B42D44AFBE0075C585 /* images */; };
+		BF4581FF2D44AFBE0075C585 /* images in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B42D44AFBE0075C585 /* images */; };
+		BF4582002D44AFBE0075C585 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B52D44AFBE0075C585 /* manifest.json */; };
+		BF4582012D44AFBE0075C585 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B52D44AFBE0075C585 /* manifest.json */; };
+		BF4582022D44AFBE0075C585 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B62D44AFBE0075C585 /* background.js */; };
+		BF4582032D44AFBE0075C585 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B62D44AFBE0075C585 /* background.js */; };
+		BF4582042D44AFBE0075C585 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B72D44AFBE0075C585 /* content.js */; };
+		BF4582052D44AFBE0075C585 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B72D44AFBE0075C585 /* content.js */; };
+		BF4582062D44AFBE0075C585 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B82D44AFBE0075C585 /* popup.html */; };
+		BF4582072D44AFBE0075C585 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B82D44AFBE0075C585 /* popup.html */; };
+		BF4582082D44AFBE0075C585 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B92D44AFBE0075C585 /* popup.css */; };
+		BF4582092D44AFBE0075C585 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = BF4581B92D44AFBE0075C585 /* popup.css */; };
+		BF45820A2D44AFBE0075C585 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = BF4581BA2D44AFBE0075C585 /* popup.js */; };
+		BF45820B2D44AFBE0075C585 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = BF4581BA2D44AFBE0075C585 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF4581DF2D44AFBE0075C585 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF4581A32D44AFBD0075C585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF4581DC2D44AFBE0075C585;
+			remoteInfo = "BookLinker Extension (iOS)";
+		};
+		BF4581E92D44AFBE0075C585 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF4581A32D44AFBD0075C585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF4581E62D44AFBE0075C585;
+			remoteInfo = "BookLinker Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF4582112D44AFBE0075C585 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BF4581DE2D44AFBE0075C585 /* BookLinker Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4582182D44AFBE0075C585 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BF4581E82D44AFBE0075C585 /* BookLinker Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF4581AA2D44AFBD0075C585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		BF4581AB2D44AFBD0075C585 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BF4581AC2D44AFBD0075C585 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		BF4581AD2D44AFBD0075C585 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		BF4581AE2D44AFBD0075C585 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF4581AF2D44AFBE0075C585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF4581B12D44AFBE0075C585 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		BF4581B32D44AFBE0075C585 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		BF4581B42D44AFBE0075C585 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		BF4581B52D44AFBE0075C585 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		BF4581B62D44AFBE0075C585 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		BF4581B72D44AFBE0075C585 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		BF4581B82D44AFBE0075C585 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		BF4581B92D44AFBE0075C585 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		BF4581BA2D44AFBE0075C585 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		BF4581BF2D44AFBE0075C585 /* BookLinker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookLinker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF4581C22D44AFBE0075C585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF4581C42D44AFBE0075C585 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF4581C72D44AFBE0075C585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF4581CA2D44AFBE0075C585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF4581CC2D44AFBE0075C585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF4581D12D44AFBE0075C585 /* BookLinker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookLinker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF4581D32D44AFBE0075C585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF4581D62D44AFBE0075C585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF4581D82D44AFBE0075C585 /* BookLinker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BookLinker.entitlements; sourceTree = "<group>"; };
+		BF4581DD2D44AFBE0075C585 /* BookLinker Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BookLinker Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF4581E22D44AFBE0075C585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF4581E72D44AFBE0075C585 /* BookLinker Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BookLinker Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF4581EC2D44AFBE0075C585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF4581ED2D44AFBE0075C585 /* BookLinker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BookLinker.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF4581BC2D44AFBE0075C585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4581CE2D44AFBE0075C585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4581DA2D44AFBE0075C585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4581E42D44AFBE0075C585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF4581A22D44AFBD0075C585 = {
+			isa = PBXGroup;
+			children = (
+				BF4581A72D44AFBD0075C585 /* Shared (App) */,
+				BF4581B02D44AFBE0075C585 /* Shared (Extension) */,
+				BF4581C12D44AFBE0075C585 /* iOS (App) */,
+				BF4581D22D44AFBE0075C585 /* macOS (App) */,
+				BF4581E12D44AFBE0075C585 /* iOS (Extension) */,
+				BF4581EB2D44AFBE0075C585 /* macOS (Extension) */,
+				BF4581C02D44AFBE0075C585 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF4581A72D44AFBD0075C585 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				BF4581AE2D44AFBD0075C585 /* ViewController.swift */,
+				BF4581AF2D44AFBE0075C585 /* Assets.xcassets */,
+				BF4581A82D44AFBD0075C585 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		BF4581A82D44AFBD0075C585 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF4581A92D44AFBD0075C585 /* Main.html */,
+				BF4581AB2D44AFBD0075C585 /* Icon.png */,
+				BF4581AC2D44AFBD0075C585 /* Style.css */,
+				BF4581AD2D44AFBD0075C585 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF4581B02D44AFBE0075C585 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BF4581B12D44AFBE0075C585 /* SafariWebExtensionHandler.swift */,
+				BF4581B22D44AFBE0075C585 /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		BF4581B22D44AFBE0075C585 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF4581B32D44AFBE0075C585 /* _locales */,
+				BF4581B42D44AFBE0075C585 /* images */,
+				BF4581B52D44AFBE0075C585 /* manifest.json */,
+				BF4581B62D44AFBE0075C585 /* background.js */,
+				BF4581B72D44AFBE0075C585 /* content.js */,
+				BF4581B82D44AFBE0075C585 /* popup.html */,
+				BF4581B92D44AFBE0075C585 /* popup.css */,
+				BF4581BA2D44AFBE0075C585 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF4581C02D44AFBE0075C585 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF4581BF2D44AFBE0075C585 /* BookLinker.app */,
+				BF4581D12D44AFBE0075C585 /* BookLinker.app */,
+				BF4581DD2D44AFBE0075C585 /* BookLinker Extension.appex */,
+				BF4581E72D44AFBE0075C585 /* BookLinker Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF4581C12D44AFBE0075C585 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				BF4581C22D44AFBE0075C585 /* AppDelegate.swift */,
+				BF4581C42D44AFBE0075C585 /* SceneDelegate.swift */,
+				BF4581C62D44AFBE0075C585 /* LaunchScreen.storyboard */,
+				BF4581C92D44AFBE0075C585 /* Main.storyboard */,
+				BF4581CC2D44AFBE0075C585 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		BF4581D22D44AFBE0075C585 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				BF4581D32D44AFBE0075C585 /* AppDelegate.swift */,
+				BF4581D52D44AFBE0075C585 /* Main.storyboard */,
+				BF4581D82D44AFBE0075C585 /* BookLinker.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		BF4581E12D44AFBE0075C585 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BF4581E22D44AFBE0075C585 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		BF4581EB2D44AFBE0075C585 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BF4581EC2D44AFBE0075C585 /* Info.plist */,
+				BF4581ED2D44AFBE0075C585 /* BookLinker.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF4581BE2D44AFBE0075C585 /* BookLinker (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF4582122D44AFBE0075C585 /* Build configuration list for PBXNativeTarget "BookLinker (iOS)" */;
+			buildPhases = (
+				BF4581BB2D44AFBE0075C585 /* Sources */,
+				BF4581BC2D44AFBE0075C585 /* Frameworks */,
+				BF4581BD2D44AFBE0075C585 /* Resources */,
+				BF4582112D44AFBE0075C585 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF4581E02D44AFBE0075C585 /* PBXTargetDependency */,
+			);
+			name = "BookLinker (iOS)";
+			productName = "BookLinker (iOS)";
+			productReference = BF4581BF2D44AFBE0075C585 /* BookLinker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF4581D02D44AFBE0075C585 /* BookLinker (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF4582192D44AFBE0075C585 /* Build configuration list for PBXNativeTarget "BookLinker (macOS)" */;
+			buildPhases = (
+				BF4581CD2D44AFBE0075C585 /* Sources */,
+				BF4581CE2D44AFBE0075C585 /* Frameworks */,
+				BF4581CF2D44AFBE0075C585 /* Resources */,
+				BF4582182D44AFBE0075C585 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF4581EA2D44AFBE0075C585 /* PBXTargetDependency */,
+			);
+			name = "BookLinker (macOS)";
+			productName = "BookLinker (macOS)";
+			productReference = BF4581D12D44AFBE0075C585 /* BookLinker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF4581DC2D44AFBE0075C585 /* BookLinker Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF45820E2D44AFBE0075C585 /* Build configuration list for PBXNativeTarget "BookLinker Extension (iOS)" */;
+			buildPhases = (
+				BF4581D92D44AFBE0075C585 /* Sources */,
+				BF4581DA2D44AFBE0075C585 /* Frameworks */,
+				BF4581DB2D44AFBE0075C585 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BookLinker Extension (iOS)";
+			productName = "BookLinker Extension (iOS)";
+			productReference = BF4581DD2D44AFBE0075C585 /* BookLinker Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BF4581E62D44AFBE0075C585 /* BookLinker Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF4582152D44AFBE0075C585 /* Build configuration list for PBXNativeTarget "BookLinker Extension (macOS)" */;
+			buildPhases = (
+				BF4581E32D44AFBE0075C585 /* Sources */,
+				BF4581E42D44AFBE0075C585 /* Frameworks */,
+				BF4581E52D44AFBE0075C585 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BookLinker Extension (macOS)";
+			productName = "BookLinker Extension (macOS)";
+			productReference = BF4581E72D44AFBE0075C585 /* BookLinker Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF4581A32D44AFBD0075C585 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					BF4581BE2D44AFBE0075C585 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					BF4581D02D44AFBE0075C585 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					BF4581DC2D44AFBE0075C585 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					BF4581E62D44AFBE0075C585 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = BF4581A62D44AFBD0075C585 /* Build configuration list for PBXProject "BookLinker" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF4581A22D44AFBD0075C585;
+			productRefGroup = BF4581C02D44AFBE0075C585 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF4581BE2D44AFBE0075C585 /* BookLinker (iOS) */,
+				BF4581D02D44AFBE0075C585 /* BookLinker (macOS) */,
+				BF4581DC2D44AFBE0075C585 /* BookLinker Extension (iOS) */,
+				BF4581E62D44AFBE0075C585 /* BookLinker Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF4581BD2D44AFBE0075C585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF4581F02D44AFBE0075C585 /* Icon.png in Resources */,
+				BF4581C82D44AFBE0075C585 /* Base in Resources */,
+				BF4581EE2D44AFBE0075C585 /* Base in Resources */,
+				BF4581F42D44AFBE0075C585 /* Script.js in Resources */,
+				BF4581F82D44AFBE0075C585 /* Assets.xcassets in Resources */,
+				BF4581CB2D44AFBE0075C585 /* Base in Resources */,
+				BF4581F22D44AFBE0075C585 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4581CF2D44AFBE0075C585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF4581F12D44AFBE0075C585 /* Icon.png in Resources */,
+				BF4581F32D44AFBE0075C585 /* Style.css in Resources */,
+				BF4581D72D44AFBE0075C585 /* Base in Resources */,
+				BF4581F52D44AFBE0075C585 /* Script.js in Resources */,
+				BF4581F92D44AFBE0075C585 /* Assets.xcassets in Resources */,
+				BF4581EF2D44AFBE0075C585 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4581DB2D44AFBE0075C585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF4582022D44AFBE0075C585 /* background.js in Resources */,
+				BF4582082D44AFBE0075C585 /* popup.css in Resources */,
+				BF4582062D44AFBE0075C585 /* popup.html in Resources */,
+				BF4581FE2D44AFBE0075C585 /* images in Resources */,
+				BF4582002D44AFBE0075C585 /* manifest.json in Resources */,
+				BF4581FC2D44AFBE0075C585 /* _locales in Resources */,
+				BF4582042D44AFBE0075C585 /* content.js in Resources */,
+				BF45820A2D44AFBE0075C585 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4581E52D44AFBE0075C585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF4582032D44AFBE0075C585 /* background.js in Resources */,
+				BF4582092D44AFBE0075C585 /* popup.css in Resources */,
+				BF4582072D44AFBE0075C585 /* popup.html in Resources */,
+				BF4581FF2D44AFBE0075C585 /* images in Resources */,
+				BF4582012D44AFBE0075C585 /* manifest.json in Resources */,
+				BF4581FD2D44AFBE0075C585 /* _locales in Resources */,
+				BF4582052D44AFBE0075C585 /* content.js in Resources */,
+				BF45820B2D44AFBE0075C585 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF4581BB2D44AFBE0075C585 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF4581F62D44AFBE0075C585 /* ViewController.swift in Sources */,
+				BF4581C32D44AFBE0075C585 /* AppDelegate.swift in Sources */,
+				BF4581C52D44AFBE0075C585 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4581CD2D44AFBE0075C585 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF4581F72D44AFBE0075C585 /* ViewController.swift in Sources */,
+				BF4581D42D44AFBE0075C585 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4581D92D44AFBE0075C585 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF4581FA2D44AFBE0075C585 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4581E32D44AFBE0075C585 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF4581FB2D44AFBE0075C585 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF4581E02D44AFBE0075C585 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF4581DC2D44AFBE0075C585 /* BookLinker Extension (iOS) */;
+			targetProxy = BF4581DF2D44AFBE0075C585 /* PBXContainerItemProxy */;
+		};
+		BF4581EA2D44AFBE0075C585 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF4581E62D44AFBE0075C585 /* BookLinker Extension (macOS) */;
+			targetProxy = BF4581E92D44AFBE0075C585 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF4581A92D44AFBD0075C585 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF4581AA2D44AFBD0075C585 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		BF4581C62D44AFBE0075C585 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF4581C72D44AFBE0075C585 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BF4581C92D44AFBE0075C585 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF4581CA2D44AFBE0075C585 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF4581D52D44AFBE0075C585 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF4581D62D44AFBE0075C585 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF45820C2D44AFBE0075C585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF45820D2D44AFBE0075C585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BF45820F2D44AFBE0075C585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3GWE7NQU6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BookLinker Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslin.BookLinker.Extension;
+				PRODUCT_NAME = "BookLinker Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF4582102D44AFBE0075C585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3GWE7NQU6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BookLinker Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslin.BookLinker.Extension;
+				PRODUCT_NAME = "BookLinker Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF4582132D44AFBE0075C585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3GWE7NQU6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BookLinker;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslin.BookLinker;
+				PRODUCT_NAME = BookLinker;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF4582142D44AFBE0075C585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3GWE7NQU6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BookLinker;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslin.BookLinker;
+				PRODUCT_NAME = BookLinker;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF4582162D44AFBE0075C585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/BookLinker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3GWE7NQU6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BookLinker Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslin.BookLinker.Extension;
+				PRODUCT_NAME = "BookLinker Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BF4582172D44AFBE0075C585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/BookLinker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3GWE7NQU6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BookLinker Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslin.BookLinker.Extension;
+				PRODUCT_NAME = "BookLinker Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BF45821A2D44AFBE0075C585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/BookLinker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3GWE7NQU6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BookLinker;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslin.BookLinker;
+				PRODUCT_NAME = BookLinker;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BF45821B2D44AFBE0075C585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/BookLinker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3GWE7NQU6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BookLinker;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslin.BookLinker;
+				PRODUCT_NAME = BookLinker;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF4581A62D44AFBD0075C585 /* Build configuration list for PBXProject "BookLinker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF45820C2D44AFBE0075C585 /* Debug */,
+				BF45820D2D44AFBE0075C585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF45820E2D44AFBE0075C585 /* Build configuration list for PBXNativeTarget "BookLinker Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF45820F2D44AFBE0075C585 /* Debug */,
+				BF4582102D44AFBE0075C585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF4582122D44AFBE0075C585 /* Build configuration list for PBXNativeTarget "BookLinker (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF4582132D44AFBE0075C585 /* Debug */,
+				BF4582142D44AFBE0075C585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF4582152D44AFBE0075C585 /* Build configuration list for PBXNativeTarget "BookLinker Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF4582162D44AFBE0075C585 /* Debug */,
+				BF4582172D44AFBE0075C585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF4582192D44AFBE0075C585 /* Build configuration list for PBXNativeTarget "BookLinker (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF45821A2D44AFBE0075C585 /* Debug */,
+				BF45821B2D44AFBE0075C585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF4581A32D44AFBD0075C585 /* Project object */;
+}
