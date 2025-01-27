@@ -1,34 +1,61 @@
-const searchUrlTemplate = "https://www.powells.com/searchresults?keyword={title}+{author}";
+const bookUrl = "https://annas-archive.org/search?index=&page=1&display=&ext=epub&src=lgli&src=lgrs&sort=newest&q={title}+{author}";
+const audioBookUrl = "https://audiobooksbee.com/?s={title}&tt=1";
 
-// Function to create and insert the search link
-function createSearchLink(title, author) {
+// Function to create and insert the search links
+function createSearchLinks(title, author) {
+  // Strip out anything after the first colon in the title
+  title = title.split(':')[0].trim();
+
   if (title && author) {
-    const searchUrl = searchUrlTemplate
+    const bookSearchUrl = bookUrl
       .replace('{title}', encodeURIComponent(title))
       .replace('{author}', encodeURIComponent(author));
 
-      
-    // Create and insert the search link
-    const searchLink = document.createElement('a');
-    searchLink.href = searchUrl;
-    searchLink.innerText = '🏴‍☠️'; // Pirate ship emoji
-    searchLink.style.marginLeft = '10px';
-    searchLink.style.color = 'blue';
-    searchLink.style.textDecoration = 'none'; // Remove underline
-    searchLink.style.fontSize = '1.5em'; // Increase emoji size
+    const audioBookSearchUrl = audioBookUrl
+      .replace('{title}', encodeURIComponent(title))
+      .replace('{author}', encodeURIComponent(author));
 
-    // Insert the link into the share section (for existing structure)
+    // Create the book search button
+    const bookButton = document.createElement('a');
+    bookButton.type = 'link';
+    bookButton.className = 'Button Button--transparent Button--medium Button--rounded';
+    bookButton.setAttribute('aria-label', 'Search for eBook');
+    bookButton.innerHTML = `<span class="Button__labelItem">📖</span>`;
+    bookButton.href = bookSearchUrl;
+    bookButton.target = '_blank';
+      
+    // Create the audiobook search button
+    const audioBookButton = document.createElement('a');
+    audioBookButton.type = 'link';
+    audioBookButton.className = 'Button Button--transparent Button--medium Button--rounded';
+    audioBookButton.setAttribute('aria-label', 'Search for Audiobook');
+    audioBookButton.innerHTML = `<span class="Button__labelItem">🎧</span>`;
+    audioBookButton.href = audioBookSearchUrl;
+    audioBookButton.targer = '_blank';
+
+    // Find the correct Button__container within the BookPageTitleSection__share div
     const shareSection = document.querySelector('.BookPageTitleSection__share');
     if (shareSection) {
-      shareSection.appendChild(searchLink);
+      const buttonContainer = shareSection.querySelector('.Button__container');
+      if (buttonContainer) {
+        // Clone the buttons and append them to the container
+        const clonedBookButton = bookButton.cloneNode(true);
+        const clonedAudioBookButton = audioBookButton.cloneNode(true);
+        buttonContainer.appendChild(clonedBookButton);
+        buttonContainer.appendChild(clonedAudioBookButton);
+      }
     }
 
-    // Insert the link into the BookCard (for new structure)
-    const bookCard = document.querySelector('.BookCard');
-    if (bookCard) {
-      const clickCardTarget = document.querySelector('.BookPage__share');
-      if (clickCardTarget) {
-        clickCardTarget.appendChild(searchLink);
+    // Find the Button__container within the BookPage__share div
+    const bookPageShareSection = document.querySelector('.BookPage__share');
+    if (bookPageShareSection) {
+      const bookPageButtonContainer = bookPageShareSection.querySelector('.Button__container');
+      if (bookPageButtonContainer) {
+        // Clone the buttons and append them to the container
+        const clonedBookButton = bookButton.cloneNode(true);
+        const clonedAudioBookButton = audioBookButton.cloneNode(true);
+        bookPageButtonContainer.appendChild(clonedBookButton);
+        bookPageButtonContainer.appendChild(clonedAudioBookButton);
       }
     }
   }
@@ -57,9 +84,9 @@ function observeBookTitle() {
       title = bookCardTitleElement.innerText;
       author = bookCardAuthorElement.innerText;
     }
-      
+
     if (title && author) {
-      createSearchLink(title, author);
+      createSearchLinks(title, author);
       observer.disconnect(); // Stop observing once the title and author are found
     }
   });
